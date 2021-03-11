@@ -67,15 +67,14 @@ console.log('8. Showing supplyChanges with "while" loop');
 
 var i = 0;
 while (i < supplyChanges.length) {
-  if (i > 0) {
+  if (supplyChanges[i] > 0) {
     console.log('Added', supplyChanges[i], 'parts.');
   }
-  else if (i < 0) {
+  else if (supplyChanges[i] < 0) {
     console.log('Part count', supplyChanges[i]);
   }
   i++;
 }
-
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
